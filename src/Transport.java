@@ -16,7 +16,9 @@ public class Transport {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        for (int i = 0; i < this.wheelsCount; i++) {
+            System.out.println("Меняем покрышку");
+        }
     }
 
     public void checkEngine() {
