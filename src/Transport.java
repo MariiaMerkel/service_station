@@ -1,4 +1,4 @@
-public class Transport {
+public abstract class Transport {
     private final String modelName;
     private final int wheelsCount;
 
@@ -15,17 +15,9 @@ public class Transport {
         return wheelsCount;
     }
 
-    public void updateTyre() {
-        for (int i = 0; i < this.wheelsCount; i++) {
-            System.out.println("Меняем покрышку");
-        }
-    }
+    public abstract void updateTyre();
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
+    public abstract void checkEngine();
 
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
+    public abstract void checkTrailer();
 }

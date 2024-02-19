@@ -9,9 +9,10 @@ public class Main {
 
         Bicycle bicycle = new Bicycle("bicycle1", 2);
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
-        Transport[] transports = new Transport[]{car, car2, truck, truck2, bicycle, bicycle2};
 
+        Transport[] transports = new Transport[]{car, car2, truck, truck2, bicycle, bicycle2};
         ServiceStation station = new ServiceStation();
+
         for (Transport t: transports) {
             station.check(t);
         }
