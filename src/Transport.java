@@ -2,22 +2,18 @@ public abstract class Transport {
     private final String modelName;
     private final int wheelsCount;
 
-    public Transport(String modelName, int wheelsCount) {
+    protected Transport(String modelName, int wheelsCount) {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
 
-    public String getModelName() {
+    protected abstract void check();
+
+    protected String getModelName() {
         return modelName;
     }
 
-    public int getWheelsCount() {
+    protected int getWheelsCount() {
         return wheelsCount;
     }
-
-    public abstract void updateTyre();
-
-    public abstract void checkEngine();
-
-    public abstract void checkTrailer();
 }

@@ -3,8 +3,6 @@ public class ServiceStation implements ServiceStationInterface {
     public void check(Transport transport) {
         System.out.println();
         System.out.println("Обслуживаем " + transport.getModelName());
-        transport.updateTyre();
-        transport.checkEngine();
-        transport.checkTrailer();
+        transport.check();
     }
 }
