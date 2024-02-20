@@ -14,7 +14,7 @@ public class Main {
         ServiceStation station = new ServiceStation();
 
         for (Transport t: transports) {
-            station.check(t);
+            station.service(t);
         }
     }
 }

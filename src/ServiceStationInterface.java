@@ -1,3 +1,3 @@
 public interface ServiceStationInterface {
-    void check(Transport transport);
+    void service(Transport transport);
 }
